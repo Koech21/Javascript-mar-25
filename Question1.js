@@ -1,13 +1,18 @@
+//**Question:**  
+//Write a function `findPairsWithSum(arr, target)` that takes an array of numbers `arr` and a target sum `target`, and returns all unique pairs of numbers that sum to the target. If no pairs are found, return an empty array.
+
+
+
 const prices= [10,20,30,40,50,60,70,80,90,100, 50, 60];
 function findPairsWithSum(arr, target) {
     // This Set keeps track of numbers we've already seen while looping.
     const seen = new Set();
 
-    // This Set stores unique stringified pairs (e.g., "2,3").
-    // Using Set ensures we don't count the same pair twice (like [2,3] and [3,2]).
+    // This Set stores unique stringified pairs.
+    // Using Set ensures we don't count the same pair twice .(2,3) (3,2)
     const pairs = new Set();
 
-    // This will store the final result: an array of unique number pairs.
+    // This will store the final result: an array of unique number pairs. 
     const result = [];
 
     // Loop through each number in the input array
@@ -39,4 +44,5 @@ function findPairsWithSum(arr, target) {
     return result;
 
 }
-console.log(findPairsWithSum(prices, 110))
+console.log(findPairsWithSum(prices, 100))
+    
