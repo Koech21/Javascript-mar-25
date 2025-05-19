@@ -5,12 +5,12 @@
 
 
 
-function findMissingNumber(Pattern){
-    const n = Pattern.length + 1;
-    const expectedsum = (n*(n+1))/2;
-    const actualsum = Pattern.reduce((a,b) => a+b,0);
-    return expectedsum - actualsum;
+function findMissingNumber(Pattern){//
+    const n = Pattern.length + 1;//
+    const expectedsum = (n*(n+1))/2;//
+    const actualsum = Pattern.reduce((a,b) => a+b,0);//
+    return expectedsum - actualsum;//
 }
-let random=[1,2,3,4,6,7,8]
-console.log(findMissingNumber(random));
+let random=[1,2,3,4,6,7,8]//
+console.log(findMissingNumber(random));//
  
