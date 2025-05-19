@@ -45,4 +45,3 @@ function findPairsWithSum(arr, target) {
 
 }
 console.log(findPairsWithSum(prices, 100))
-    
